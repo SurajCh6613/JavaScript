@@ -7,7 +7,7 @@ let userState;
 
 console.log("Before any Changes");
 console.log(userId);
-console.table([userId, userName, userEmail, userCity, userPassword, userState]);
+console.table([userId, userName, userEmail, userCity, userPassword, userState]);// Print Values in Table form
 
 //Trying to change values of variables
 
@@ -20,4 +20,4 @@ userState = "Uttar Pradesh";
 
 console.log("After Changes");
 console.log(userId);
-console.table([userId, userName, userEmail, userCity, userPassword, userState]);
+console.table([userId, userName, userEmail, userCity, userPassword, userState]);// Print Values in Table form
