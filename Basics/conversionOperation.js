@@ -48,3 +48,41 @@ let tempInString = String(temp); // undefined => 'undefined'
 
 // Printing in table form
 // console.table([scoreInString, isPresentInString, tempInString]);
+
+
+//**************************************** Operations  **************************************//
+
+let value = 45;
+let negativeValue = -value
+
+// console.log(negativeValue);
+
+
+let str1 = "Hello"
+let str2 = " Suraj Chaudhary"
+let str3 = str1 + str2;
+
+// console.log(str3);
+
+//Mathematical Operations 
+
+// console.log(2 + 3);
+// console.log(2 - 3);
+// console.log(2 * 3);
+// console.log(2 ** 3);
+// console.log(2 / 3);
+// console.log(2 % 3);
+
+// console.log("1" + 2);  // 12
+// console.log(1 + "2");  // 12
+// console.log("1" + "2");  // 12
+// console.log("1" + 2 + 2);  //122
+// console.log(1 + 2 + "2");  // 32
+
+// console.log(true); //true
+// console.log(+true);// 1
+// console.log(false);//false
+// console.log(+false);//0
+
+// console.log(+"");//0
+
