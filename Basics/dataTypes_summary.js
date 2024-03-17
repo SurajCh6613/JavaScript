@@ -33,4 +33,39 @@ let printHello = function() {
     console.log("Hello Suraj");
 }
 
-printHello();
+// printHello();
+
+
+
+/*++++++++++++++++++++++++++++++++ STACK and HEAP Concept ++++++++++++++++++ */
+
+// STACK Alloacation for Premitive Data types
+// In STACK Copy of data passes
+
+let myName = "Suraj Chaudhary"
+
+let anotherName = myName
+
+// console.log(myName);
+// console.log(anotherName);
+
+anotherName = "Suraj"
+
+// console.log(myName);
+// console.log(anotherName);
+
+
+// HEAP Alloacation for Non-Premitive Data types
+// In HEAP reference of data Passes
+
+let userOne ={
+    email: "user@gmail.com",
+    upi : "user@ybl"
+}
+
+let userTwo = userOne
+
+userTwo.email = "newUserEmail.com"
+
+console.log(userOne.email)
+console.log(userTwo.email)
