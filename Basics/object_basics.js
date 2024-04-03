@@ -1,6 +1,3 @@
-//    // Singleton    
-//    Object.create
-
 //      //Object Literals
 
 // Symbol
@@ -43,3 +40,33 @@ user.greetingTwo = function() {
 
 console.log(user.greeting());
 console.log(user.greetingTwo());
+
+// //Creating an Singleton Object
+const userOne = new Object()
+// console.log(userOne);
+
+// Nested Object in JS
+const userTwo = {
+    fullnName: {
+        userFullName : {
+            firstName: "Suraj",
+            lastName: "Chaudhary"
+        }
+    }
+}
+
+// // Access of nested object in JavaScript
+// console.log(userTwo.fullnName);
+// console.log(userTwo.fullnName.userFullName);
+// console.log(userTwo.fullnName.userFullName.firstName);
+
+// Object Merging methods in JavaScript
+const obj1 = {1:'a',2:'b'}
+const obj2 = {3:'c',4:'d'}
+const obj3 = {5:'e',6:'f'}
+
+// Methods to merge
+// const obj4 = {obj1,obj2}        //Returns object inside object
+// const obj4 = {...obj1,...obj2,...obj3}      //Returns spread out values in obj4
+const obj4 =Object.assign({},obj1,obj2,obj3)
+console.log(obj4);
