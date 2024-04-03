@@ -52,7 +52,7 @@ marvel_heros.push(dc_heros)     // Push the array inside the array
 const all_heros = marvel_heros.concat(dc_heros)
 // console.log(all_heros);
 
-const all_hero = [...marvel_heros, ...dc_heros]
+const all_hero = [...marvel_heros, ...dc_heros]     //Spread out the values
 // console.log(all_hero);
 
 const another_array = [1,2,3,[4,5,6],[7,8,[9,10]]]
