@@ -55,10 +55,10 @@ const userTwo = {
     }
 }
 
-// // Access of nested object in JavaScript
-// console.log(userTwo.fullnName);
-// console.log(userTwo.fullnName.userFullName);
-// console.log(userTwo.fullnName.userFullName.firstName);
+// Access of nested object in JavaScript
+console.log(userTwo.fullnName);
+console.log(userTwo.fullnName.userFullName);
+console.log(userTwo.fullnName.userFullName.firstName);
 
 // Object Merging methods in JavaScript
 const obj1 = {1:'a',2:'b'}
@@ -70,3 +70,39 @@ const obj3 = {5:'e',6:'f'}
 // const obj4 = {...obj1,...obj2,...obj3}      //Returns spread out values in obj4
 const obj4 =Object.assign({},obj1,obj2,obj3)
 console.log(obj4);
+
+// Multiple Objects in an Array
+const users = [
+    {
+        name :"Suraj",
+        email : "suraj@google.com"
+    },
+    {
+        name :"Suraj",
+        email : "suraj@google.com"
+    },
+    {
+        name :"Suraj",
+        email : "suraj@google.com"
+    },
+    {
+        name :"Suraj",
+        email : "suraj@google.com"
+    },
+    {
+        name :"Suraj",
+        email : "suraj@google.com"
+    },
+]
+
+// To Access objects in array
+console.log(users[1].email)
+
+// Method to access keys and values of an object
+console.log(Object.keys(user));          //To get keys of an object
+console.log(Object.values(user));        //To get values of an object
+
+console.log(Object.entries(user));  // Represent array of key value pairs
+
+console.log(user.hasOwnProperty('name'));   // Check property is available or not in the object return true or false
+
