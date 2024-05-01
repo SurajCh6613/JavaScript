@@ -106,3 +106,30 @@ console.log(Object.entries(user));  // Represent array of key value pairs
 
 console.log(user.hasOwnProperty('name'));   // Check property is available or not in the object return true or false
 
+// De Structuring of object
+const course = {
+    coursename: "JS",
+    price:"999",
+    courseInstructor:"Suraj"
+}
+
+// course.courseInstructor
+
+const {courseInstructor : instructor} = course
+
+// console.log(courseInstructor)
+// console.log(instructor);
+
+
+// JSON Format
+// {
+//     "name": "Suraj",
+//     "coursename": "JS",
+//     "price": "free"
+// }
+
+[
+    {},
+    {},
+    {}
+]
