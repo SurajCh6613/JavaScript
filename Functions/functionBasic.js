@@ -38,5 +38,46 @@ function loginUserMessage(username = 'suraj'){
     return `${username} just logged in`
 }
 
-console.log(loginUserMessage());        //suraj just logged in
-console.log(loginUserMessage("Vikrant"));        //Vikrant just logged in by override
+// console.log(loginUserMessage());        //suraj just logged in
+// console.log(loginUserMessage("Vikrant"));        //Vikrant just logged in by override
+
+// Rest operator for multiple values pass //Returns array 
+function calculateCartPrice(...num1){
+    return num1
+}
+
+// console.log(calculateCartPrice(20));
+// console.log(calculateCartPrice(20,40,60));
+
+const user = {
+    username:"Suraj",
+    id:103
+}
+const user2 = {
+    username:"Suraj",
+    ids:103
+}
+
+function handleObject(anyObject){
+    console.log(`Username is ${anyObject.username} and id is ${anyObject.id}`);
+}
+
+// handleObject(user) // Print:--> Username is Suraj and id is 103
+// handleObject(user2) // Print:--> Username is Suraj and id is undefined due to "ids"
+
+// Passing Direct object in function
+handleObject({
+    username:"Ram",
+    id:111
+})
+
+const newArray = [200,100,400,455]
+
+function returnSecondValue(getArray){
+    return getArray[2]
+}
+
+// console.log(returnSecondValue(newArray));       // Print 400
+
+//Passing Direct Array in function
+// console.log(returnSecondValue([200,300,400,500,600,100]));      //Print 400
