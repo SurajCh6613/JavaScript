@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DOM Learning</title>
+
+    <style>
+        body{
+            background-color: #323030;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <div class="bg-black">
+        <h1 class="heading">DOM learning By Hitesh Chaudhary</h1>
+        <p>Lorem ipsum dolor sit amet.</p>
+
+        <ul>
+            <li class="list-item">One </li>
+            <li class="list-item">Two</li>
+            <li class="list-item">Three</li>
+            <li class="list-item">Four</li>
+        </ul>
+    </div>
+
+
+    <script>
+        // //Queryselector
+
+        // // DOM for turn firsy li backgroundColor Green and add padding 10px
+        // const myul = document.querySelector('ul');
+        // const turnGreen = myul.querySelector('li');
+        // turnGreen.style.backgroundColor = 'green';
+        // turnGreen.style.padding = '10px';
+        // turnGreen.innerHTML = 'five';
+
+        // //QueryselectorAll
+
+        // const tempLiList = document.querySelectorAll('li');
+        // tempLiList[0].style.backgroundColor = 'green'       //Changing first li element background color green
+        // tempLiList.forEach(function (l) {
+        //     l.style.backgroundColor = 'green'
+        //     l.style.color = 'yellow'
+        // })
+
+        const tempClassList = document.getElementsByClassName('list-item');
+        // Converting HTMlcollection into array 
+        const listArray = Array.from(tempClassList);
+        listArray.forEach((li)=> {
+            li.style.color = 'green'
+        });
+
+
+
+    </script>
+</body>
+</html>
