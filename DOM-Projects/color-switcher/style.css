@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100%;
+    width: 100%;
+    background-color: #212121;
+    color: #fff;
+}
+
+.canvas{
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.canvas .button{
+    height: 100px;
+    width: 100px;
+    border: 2px solid rgb(255, 131, 131);
+}
+#yellow{
+    background-color: yellow;
+}
+#blue{
+    background-color: blue;
+}
+#grey{
+    background-color: grey;
+}
+#white{
+    background-color: white;
+}
+#purple{
+    background-color: purple;
+}
